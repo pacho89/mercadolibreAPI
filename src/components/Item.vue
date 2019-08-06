@@ -4,6 +4,7 @@
         <div class="card-body">
             <h1 class="card-title">{{title}}</h1>
             <p class="card-text">El precio es: ${{price}}</p>
+            <p class="card-text">El vendedor es: {{seller}}</p>
         </div>
     </div>
 </template>
@@ -13,6 +14,7 @@ export default {
   props: {
     title: String,
     price: Number,
+    seller: String,
     imgUrl: String
   }
 };

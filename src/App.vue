@@ -38,7 +38,7 @@ export default {
             //this.listademercado = res.body['results'];
             //this.info =this.listademercado
             this.info= res.data.results
-            //console.log(this.info)
+            console.log(this.info)
           //for(var i=0; i<this.listademercado.length; i++){
             //this.producto[i]=this.listademercado[i].title
             //this.precio[i]=this.listademercado[i].price
@@ -59,7 +59,7 @@ export default {
       .get(`https://api.mercadolibre.com/users/${identificacion}`)
       .then(resp => {
         this.usuarioid=resp.body['nickname'];
-        //console.log(this.usuarioid)
+        console.log(this.info)
       })
     }
   }

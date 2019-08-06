@@ -2,7 +2,7 @@
     <div class="list-group">
         <ul class="list-group-item">
             <li><Item :key="obj" v-for="obj in object" :title="obj.title" :price="obj.price"
-            :imgUrl="obj.thumbnail"></Item></li>
+            :seller="obj.seller.id" :imgUrl="obj.thumbnail"></Item></li>
         </ul>
         
         <h2>
