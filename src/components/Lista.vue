@@ -1,16 +1,12 @@
 <template>
-    <div class="list-group">
-        <ul class="list-group-item">
-            <li><Item :key="obj" v-for="obj in object" :title="obj.title" :price="obj.price"
-            :seller="obj.seller.id" :imgUrl="obj.thumbnail"></Item></li>
-        </ul>
+        <div class="list-group-item">
+            <div class="list-group-item"><Item :key="obj" v-for="obj in object" :title="obj.title" :price="obj.price"
+            :seller="obj.seller.id" :imgUrl="obj.thumbnail"></Item></div>
         
         <h2>
             Aqui fue
-
         </h2>
     </div>
-    
 </template>
 
 <script>
@@ -26,5 +22,10 @@ export default {
 </script>
 
 <style>
-
+    .list-group-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
