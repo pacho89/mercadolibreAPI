@@ -1,7 +1,8 @@
 <template>
         <div>
             <div class="list-group-item"><Item v-for="(obj, index) in object" :key="index" :title="obj.title" :price="obj.price"
-            :seller="method(obj.seller.id)" :imgUrl="obj.thumbnail"></Item></div>
+            :seller="method(obj.seller.id)" :imgUrl="obj.thumbnail"></Item>
+            </div>
         
         <h2>
             Aqui fue
@@ -13,7 +14,7 @@
 import Item from './Item.vue'
 export default {
     name: 'lista',
-    props: ['object', 'method'],
+    props: ['object', 'method', 'string'],
     components: {
     Item
   },

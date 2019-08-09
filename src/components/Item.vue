@@ -14,7 +14,7 @@ export default {
   props: {
     title: String,
     price: Number,
-    seller: String,
+    seller: Number,
     imgUrl: String
   }
 };

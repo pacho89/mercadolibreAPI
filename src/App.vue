@@ -59,11 +59,12 @@ export default {
       .get(`https://api.mercadolibre.com/users/${identificacion}`)
       .then(resp => {
         this.usuarioid=resp.body['nickname'];
+        this.nombrev[0]=this.usuarioid;
         //console.log(this.usuarioid)
         //return this.usuarioid
         
       })
-      return this.usuarioid
+      return  this.nombrev[0].toString()
     }
   }
 };
