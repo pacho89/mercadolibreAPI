@@ -33,7 +33,7 @@ export default {
     mercadobuscar: async function(texto) {
       //var caos
       this.$http
-        .get(`https://api.mercadolibre.com/sites/MLC/search?q=${texto}&limit=5`)
+        .get(`https://api.mercadolibre.com/sites/MCO/search?q=${texto}&limit=5`)
         .then(res => {
             //this.listademercado = res.body['results'];
             //this.info =this.listademercado
